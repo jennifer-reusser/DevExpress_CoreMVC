@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>FNSB Specifications and Security Reports for OneSolution and ApplicationXtender</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>OneSolution Reports</h2>
+        <p>
+            The OneSolution (OS) reports consist of Security Role Documentation and User Access Forms.
+        </p>
+        <ul>
+            <li>Security Definitions by Setting</li>
+            <li>Security Definitions by Setting with PCN assignments</li>
+            <li>Security Definitions by Security Role</li>
+            <li>Security Definitions by Security Role with PCN assignments</li>
+            <li>Security Definitions by PCN and organized by Setting</li>
+            <li>Security Definitions by PCN and organized by Security Role</li>
+            <li>User Access Request Forms (for review)</li>
+            <li>User Access Request Forms (for signature)</li>
+        </ul>
+        <p>@Html.ActionLink("Go to OS Reports", "OSReports", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>ApplicationXtender Reports</h2>
+        <p>
+            The ApplicationXtender (AX) reports consist of Application and Global UDL Specifications, Documentation Overview, and User Access Forms.
+        </p>
+        <ul>
+            <li>Documentation Overview</li>
+            <li>Global User-defined List (UDL) Specifications</li>
+            <li>Application Specifications (for review)</li>
+            <li>Application Specifications (for signature)</li>
+            <li>User Access Request Forms (for review)</li>
+            <li>User Access Request Forms (for signature)</li>
+        </ul>
+        <p>@Html.ActionLink("Go to AX Reports", "AXReports", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>User Access Forms</h2>
+        <p>
+            The User Access Forms are for ApplicationXtender (AX) and OneSolution (OS) access requirements.
+        </p>
+        <ul>
+            <li>AX User Access Request Forms (for review)</li>
+            <li>AX User Access Request Forms (for signature)</li>
+            <li>OS User Access Request Forms (for review)</li>
+            <li>OS User Access Request Forms (for signature)</li>
+        </ul>
+        <p>@Html.ActionLink("Go to Access Forms", "AccessForms", "Home")</p>
+    </div>
+</div>
