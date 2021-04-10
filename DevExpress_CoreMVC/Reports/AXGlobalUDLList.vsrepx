@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="20.2.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="AXGlobalUDLList" Margins="70, 30, 30, 50" PageWidth="850" PageHeight="1100" Version="20.2" DataMember="GlobalUDLs" DataSource="#Ref-0" Font="Arial, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="20.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="AXGlobalUDLList" Margins="70, 30, 30, 50" PageWidth="850" PageHeight="1100" Version="20.2" DataMember="GlobalUDLs" DataSource="#Ref-0" Font="Arial, 9.75pt">
   <Extensions>
     <Item1 Ref="2" Key="VSReportExtInfo" Value=".vsrepx" />
   </Extensions>
@@ -17,16 +17,16 @@
           <Rows>
             <Item1 Ref="9" ControlType="XRTableRow" Name="tableRow1" Weight="1">
               <Cells>
-                <Item1 Ref="10" ControlType="XRTableCell" Name="tableCell1" Weight="0.21404386393229166" Text="UDL Name" StyleName="DetailCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Black" Borders="None">
+                <Item1 Ref="10" ControlType="XRTableCell" Name="tableCell1" Weight="0.21404386393229166" Text="UDL Name" StyleName="DetailCaption1" ForeColor="Black" BackColor="LightGray" BorderColor="Black" Borders="None">
                   <StylePriority Ref="11" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorders="false" />
                 </Item1>
-                <Item2 Ref="12" ControlType="XRTableCell" Name="tableCell2" Weight="0.30861893717447919" Text="UDL Description" StyleName="DetailCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Black">
+                <Item2 Ref="12" ControlType="XRTableCell" Name="tableCell2" Weight="0.30861893717447919" Text="UDL Description" StyleName="DetailCaption1" ForeColor="Black" BackColor="LightGray" BorderColor="Black">
                   <StylePriority Ref="13" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
                 </Item2>
-                <Item3 Ref="14" ControlType="XRTableCell" Name="tableCell3" Weight="0.26141453043619789" Text="Server Status" StyleName="DetailCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Black">
+                <Item3 Ref="14" ControlType="XRTableCell" Name="tableCell3" Weight="0.26141453043619789" Text="Server Status" StyleName="DetailCaption1" ForeColor="Black" BackColor="LightGray" BorderColor="Black">
                   <StylePriority Ref="15" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
                 </Item3>
-                <Item4 Ref="16" ControlType="XRTableCell" Name="tableCell4" Weight="0.21592272949218749" Text="List Status" StyleName="DetailCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Black">
+                <Item4 Ref="16" ControlType="XRTableCell" Name="tableCell4" Weight="0.21592272949218749" Text="List Status" StyleName="DetailCaption1" ForeColor="Black" BackColor="LightGray" BorderColor="Black">
                   <StylePriority Ref="17" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
                 </Item4>
               </Cells>
@@ -73,16 +73,18 @@
     </Item4>
     <Item5 Ref="33" ControlType="PageHeaderBand" Name="PageHeader" HeightF="27.2916641">
       <Controls>
-        <Item1 Ref="34" ControlType="XRLabel" Name="label1" Text="List of Global User-Defined Lists" SizeF="750,24.194334" LocationFloat="0,0" StyleName="Title" />
+        <Item1 Ref="34" ControlType="XRLabel" Name="label1" Text="List of Global User-Defined Lists" SizeF="750,24.194334" LocationFloat="0,0" StyleName="Title" Font="Calibri, 18pt, style=Bold, charSet=0" ForeColor="Black" BackColor="LightSteelBlue" BorderColor="Transparent">
+          <StylePriority Ref="35" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+        </Item1>
       </Controls>
     </Item5>
   </Bands>
   <StyleSheet>
-    <Item1 Ref="35" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 14.25pt" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
-    <Item2 Ref="36" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,69,94,178" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
-    <Item3 Ref="37" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
-    <Item4 Ref="38" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="Black" BackColor="255,243,245,248" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
-    <Item5 Ref="39" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item1 Ref="36" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 14.25pt" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="37" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,69,94,178" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="38" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="39" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="Black" BackColor="255,243,245,248" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="40" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
   </StyleSheet>
   <ComponentStorage>
     <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="DSAR" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iRFNBUiI+PENvbm5lY3Rpb24gTmFtZT0iRFNBUl9Db25uZWN0aW9uIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJDdXN0b21TcWxRdWVyeSIgTmFtZT0iR2xvYmFsVURMcyI+PFNxbD5TRUxFQ1QgVURMX05hbWUsIFVETF9EZXNjcmlwdGlvbiwgU2VydmVyU3RhdHVzLCBMaXN0U3RhdHVzDQpGUk9NIGF4c3BlY3Mudkdsb2JhbFVzZXJEZWZpbmVkTGlzdHM8L1NxbD48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0iRFNBUiI+PFZpZXcgTmFtZT0iR2xvYmFsVURMcyI+PEZpZWxkIE5hbWU9IlVETF9OYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVETF9EZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTZXJ2ZXJTdGF0dXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGlzdFN0YXR1cyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />

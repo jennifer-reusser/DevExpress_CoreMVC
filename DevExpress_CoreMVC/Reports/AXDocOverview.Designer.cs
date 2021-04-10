@@ -26,6 +26,8 @@ namespace DevExpress_CoreMVC.Reports {
             this.appList = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("appList");
             this.appList.ReportSource = new DevExpress_CoreMVC.Reports.AXApplicationList();
             this.label1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label1");
+            this.groupType = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("groupType");
+            this.groupType.ReportSource = new DevExpress_CoreMVC.Reports.AXGroupTypes();
 
             // Data Sources
             this.sqlDataSource1 = reportInitializer.GetDataSource<DevExpress.DataAccess.Sql.SqlDataSource>("sqlDataSource1");
@@ -44,5 +46,6 @@ namespace DevExpress_CoreMVC.Reports {
         private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.XRSubreport groupType;
     }
 }

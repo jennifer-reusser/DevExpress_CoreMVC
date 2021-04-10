@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="AXGroupTypes" Margins="70, 30, 30, 50" PageWidth="850" PageHeight="1100" Version="20.2" DataMember="axspecs_vGroupTypes" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".vsrepx" />
+  </Extensions>
+  <CalculatedFields>
+    <Item1 Ref="3" Name="PrivilegedRevoked" Expression="Iif([NoPrivilege]=1, 'Application Privileges Explicitly Revoked', '')" DataMember="axspecs_vGroupTypes" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin" HeightF="30" />
+    <Item2 Ref="5" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="375,23" LocationFloat="375,0" StyleName="PageInfo" />
+        <Item2 Ref="7" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="375,23" LocationFloat="0,0" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="8" ControlType="DetailBand" Name="Detail" HeightF="325.0001" Font="Calibri, 9pt, charSet=0">
+      <Controls>
+        <Item1 Ref="9" ControlType="XRCheckBox" Name="checkBox40" Text=" Report View" SizeF="178.854858,23" LocationFloat="571.1451,279" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="10" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[ReportView]" />
+          </ExpressionBindings>
+        </Item1>
+        <Item2 Ref="11" ControlType="XRCheckBox" Name="checkBox39" Text=" Global Annotations" SizeF="178.854858,23" LocationFloat="571.1451,256.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="12" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[GlobalAnnotations]" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="13" ControlType="XRCheckBox" Name="checkBox38" Text=" Create Annotations" SizeF="178.854736,23" LocationFloat="571.1452,233.000061" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="14" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[CreateAnnotations]" />
+          </ExpressionBindings>
+        </Item3>
+        <Item4 Ref="15" ControlType="XRCheckBox" Name="checkBox37" Text=" User Security Maintenance" SizeF="178.854736,23" LocationFloat="571.1452,210.000076" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="16" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[UserSecurityMaintenance]" />
+          </ExpressionBindings>
+        </Item4>
+        <Item5 Ref="17" ControlType="XRCheckBox" Name="checkBox36" Text=" COLD Batch Extract" SizeF="178.854858,23" LocationFloat="571.1451,187.000046" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="18" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[COLDBatchExtract]" />
+          </ExpressionBindings>
+        </Item5>
+        <Item6 Ref="19" ControlType="XRCheckBox" Name="checkBox35" Text=" Delete Application" SizeF="178.8548,23" LocationFloat="571.145142,164.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="20" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[DeleteApplication]" />
+          </ExpressionBindings>
+        </Item6>
+        <Item7 Ref="21" ControlType="XRCheckBox" Name="checkBox34" Text=" Delete Doc" SizeF="178.854858,23" LocationFloat="571.1451,141.000015" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="22" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[DeleteDoc]" />
+          </ExpressionBindings>
+        </Item7>
+        <Item8 Ref="23" ControlType="XRCheckBox" Name="checkBox33" Text=" Batch Index" SizeF="178.854858,23" LocationFloat="571.1451,118" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="24" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[BatchIndex]" />
+          </ExpressionBindings>
+        </Item8>
+        <Item9 Ref="25" ControlType="XRCheckBox" Name="checkBox32" Text=" Submit Workflow" SizeF="190.260132,23" LocationFloat="380.885,302.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="26" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[SubmitWorkflow]" />
+          </ExpressionBindings>
+        </Item9>
+        <Item10 Ref="27" ControlType="XRCheckBox" Name="checkBox31" Text=" OCR" SizeF="190.260071,23" LocationFloat="380.885,279.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="28" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[OCR]" />
+          </ExpressionBindings>
+        </Item10>
+        <Item11 Ref="29" ControlType="XRCheckBox" Name="checkBox30" Text=" Edit Redactions" SizeF="190.260071,23" LocationFloat="380.885,256.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="30" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[EditRedations]" />
+          </ExpressionBindings>
+        </Item11>
+        <Item12 Ref="31" ControlType="XRCheckBox" Name="checkBox29" Text=" Index/Image Import" SizeF="190.260071,23" LocationFloat="380.885,233.000092" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="32" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[IndexImageImport]" />
+          </ExpressionBindings>
+        </Item12>
+        <Item13 Ref="33" ControlType="XRCheckBox" Name="checkBox28" Text=" Multiple Logins" SizeF="178.854858,22.9999981" LocationFloat="571.1451,22.9999866" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="34" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[MultipleLogins]" />
+          </ExpressionBindings>
+        </Item13>
+        <Item14 Ref="35" ControlType="XRCheckBox" Name="checkBox27" Text=" Auto Index Maintenance" SizeF="190.26,23" LocationFloat="380.885,210" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="36" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[AutoIndexMaintenance]" />
+          </ExpressionBindings>
+        </Item14>
+        <Item15 Ref="37" ControlType="XRCheckBox" Name="checkBox26" Text=" COLD Import Maintenance" SizeF="190.26,23" LocationFloat="380.885,187.000046" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="38" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[COLDImportMaintenance]" />
+          </ExpressionBindings>
+        </Item15>
+        <Item16 Ref="39" ControlType="XRCheckBox" Name="checkBox25" Text=" Modify Application" SizeF="190.26,23" LocationFloat="380.885,164.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="40" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[ModifyApplication]" />
+          </ExpressionBindings>
+        </Item16>
+        <Item17 Ref="41" ControlType="XRCheckBox" Name="checkBox24" Text=" Print" SizeF="190.26,23" LocationFloat="380.885,141.000015" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="42" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[PrintSetting]" />
+          </ExpressionBindings>
+        </Item17>
+        <Item18 Ref="43" ControlType="XRCheckBox" Name="checkBox23" Text=" Batch Scan" SizeF="190.26,23" LocationFloat="380.885,118" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="44" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[BatchScan]" />
+          </ExpressionBindings>
+        </Item18>
+        <Item19 Ref="45" ControlType="XRCheckBox" Name="checkBox22" Text=" Administrator" SizeF="190.26,23" LocationFloat="380.885,22.9999866" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="46" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[Administrator]" />
+          </ExpressionBindings>
+        </Item19>
+        <Item20 Ref="47" ControlType="XRCheckBox" Name="checkBox21" Text=" Retention Administrator" SizeF="190.26,23" LocationFloat="190.625,302.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="48" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[RetentionAdministrator]" />
+          </ExpressionBindings>
+        </Item20>
+        <Item21 Ref="49" ControlType="XRCheckBox" Name="checkBox20" Text=" Full Text Query" SizeF="190.26,23" LocationFloat="190.625,279" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="50" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[FullTextQuery]" />
+          </ExpressionBindings>
+        </Item21>
+        <Item22 Ref="51" ControlType="XRCheckBox" Name="checkBox19" Text=" Create Redactions" SizeF="190.26,23" LocationFloat="190.625,256.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="52" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[CreateRedactions]" />
+          </ExpressionBindings>
+        </Item22>
+        <Item23 Ref="53" ControlType="XRCheckBox" Name="checkBox18" Text=" Auto Index Import" SizeF="190.26,23" LocationFloat="190.625,233.000092" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="54" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[AutoIndexImport]" />
+          </ExpressionBindings>
+        </Item23>
+        <Item24 Ref="55" ControlType="XRCheckBox" Name="checkBox17" Text=" Key Reference Maintenance" SizeF="190.26,23" LocationFloat="190.625,210.000076" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="56" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[KeyReferenceMaintenance]" />
+          </ExpressionBindings>
+        </Item24>
+        <Item25 Ref="57" ControlType="XRCheckBox" Name="checkBox16" Text=" COLD Import" SizeF="190.26,23" LocationFloat="190.625,187.000046" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="58" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[COLDImport]" />
+          </ExpressionBindings>
+        </Item25>
+        <Item26 Ref="59" ControlType="XRCheckBox" Name="checkBox15" Text=" Add Page" SizeF="190.26,23" LocationFloat="190.625,164.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="60" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[AddPage]" />
+          </ExpressionBindings>
+        </Item26>
+        <Item27 Ref="61" ControlType="XRCheckBox" Name="checkBox14" Text=" Display" SizeF="190.26,23" LocationFloat="190.625,141.000015" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="62" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[Display]" />
+          </ExpressionBindings>
+        </Item27>
+        <Item28 Ref="63" ControlType="XRCheckBox" Name="checkBox13" Text=" Enhance Pages" SizeF="190.26,23" LocationFloat="190.625,118" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="64" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[EnhancePages]" />
+          </ExpressionBindings>
+        </Item28>
+        <Item29 Ref="65" ControlType="XRCheckBox" Name="checkBox12" Text=" Create Application" SizeF="190.26,23" LocationFloat="190.625,22.9999866" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="66" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[CreateApplication]" />
+          </ExpressionBindings>
+        </Item29>
+        <Item30 Ref="67" ControlType="XRCheckBox" Name="checkBox11" Text=" Retention User" SizeF="190.625,23" LocationFloat="0,302.0001" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="68" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[RetentionUser]" />
+          </ExpressionBindings>
+        </Item30>
+        <Item31 Ref="69" ControlType="XRCheckBox" Name="checkBox10" Text=" Full Text Index" SizeF="190.625,23.00003" LocationFloat="0,279.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="70" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[FullTextIndex]" />
+          </ExpressionBindings>
+        </Item31>
+        <Item32 Ref="71" ControlType="XRCheckBox" Name="checkBox9" Text=" Edit Annotations" SizeF="190.625,23" LocationFloat="0,256.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="72" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[EditAnnotations]" />
+          </ExpressionBindings>
+        </Item32>
+        <Item33 Ref="73" ControlType="XRCheckBox" Name="checkBox8" Text=" Key Reference Import" SizeF="190.625,23" LocationFloat="0,233.000061" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="74" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[KeyReferenceImport]" />
+          </ExpressionBindings>
+        </Item33>
+        <Item34 Ref="75" ControlType="XRCheckBox" Name="checkBox7" Text=" Doc Level Security Maintenance" SizeF="190.625,23" LocationFloat="0,210.000046" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="76" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[DocLevelSecurityMaintenance]" />
+          </ExpressionBindings>
+        </Item34>
+        <Item35 Ref="77" ControlType="XRCheckBox" Name="checkBox6" Text=" Migrate Application" SizeF="190.625,23" LocationFloat="0,187.000046" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="78" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[MigrateApplication]" />
+          </ExpressionBindings>
+        </Item35>
+        <Item36 Ref="79" ControlType="XRCheckBox" Name="checkBox5" Text=" Delete Page" SizeF="190.625,23" LocationFloat="0,164.000031" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="80" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[DeletePage]" />
+          </ExpressionBindings>
+        </Item36>
+        <Item37 Ref="81" ControlType="XRCheckBox" Name="checkBox4" Text=" Modify Index" SizeF="190.625,23" LocationFloat="0,141.000015" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="82" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[ModifyIndex]" />
+          </ExpressionBindings>
+        </Item37>
+        <Item38 Ref="83" ControlType="XRLabel" Name="label4" Multiline="true" CanShrink="true" Text="[PrivilegeRevoked]" SizeF="749.999939,23" LocationFloat="0,94.9999847" Font="Calibri, 9pt, style=Bold, Italic" Padding="2,2,2,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="84" EventName="BeforePrint" PropertyName="Text" Expression="[PrivilegedRevoked]" />
+          </ExpressionBindings>
+          <StylePriority Ref="85" UseFont="false" UsePadding="false" />
+        </Item38>
+        <Item39 Ref="86" ControlType="XRCheckBox" Name="checkBox3" Text=" Scan/Index Online" SizeF="190.625,23" LocationFloat="0,118" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="87" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[ScanIndexOnline]" />
+          </ExpressionBindings>
+        </Item39>
+        <Item40 Ref="88" ControlType="XRCheckBox" Name="checkBox2" Text=" Public Access License User" SizeF="190.625,22.9999962" LocationFloat="0,46.0000038" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="89" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[PublicAccessLicenseUser]" />
+          </ExpressionBindings>
+        </Item40>
+        <Item41 Ref="90" ControlType="XRCheckBox" Name="checkBox1" Text=" Configure Work Station" SizeF="190.625,22.9999981" LocationFloat="0,22.9999866" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="91" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[ConfigureWorkStation]" />
+          </ExpressionBindings>
+        </Item41>
+        <Item42 Ref="92" ControlType="XRLabel" Name="label3" Multiline="true" Text="Application Privileges" TextAlignment="TopCenter" SizeF="749.999939,23" LocationFloat="0,72" Font="Calibri, 9pt, style=Bold" Padding="2,2,2,0,100" Borders="All">
+          <StylePriority Ref="93" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item42>
+        <Item43 Ref="94" ControlType="XRLabel" Name="label2" Multiline="true" Text="Global Privileges" TextAlignment="TopCenter" SizeF="749.999939,23" LocationFloat="0,0" Font="Calibri, 9pt, style=Bold" Padding="2,2,2,0,100" Borders="All">
+          <StylePriority Ref="95" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item43>
+      </Controls>
+      <StylePriority Ref="96" UseFont="false" />
+    </Item3>
+    <Item4 Ref="97" ControlType="PageHeaderBand" Name="PageHeader" HeightF="29.3749962">
+      <Controls>
+        <Item1 Ref="98" ControlType="XRLabel" Name="label1" Text="Group Type Specifications" SizeF="750,24.194334" LocationFloat="0,0" StyleName="Title" Font="Calibri, 18pt, style=Bold, charSet=0" ForeColor="Black" BackColor="LightSteelBlue" BorderColor="Transparent">
+          <StylePriority Ref="99" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="100" ControlType="GroupHeaderBand" Name="GroupHeader1" RepeatEveryPage="true" GroupUnion="WithFirstDetail" HeightF="52.0000153" KeepTogether="true">
+      <GroupFields>
+        <Item1 Ref="101" FieldName="GroupType" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="102" ControlType="XRTable" Name="table1" SizeF="750,50" LocationFloat="0,2.000014">
+          <Rows>
+            <Item1 Ref="103" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="104" ControlType="XRTableCell" Name="tableCell1" Weight="0.1958991124551297" Multiline="true" Text="Group Type:" StyleName="GroupCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Transparent">
+                  <StylePriority Ref="105" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item1>
+                <Item2 Ref="106" ControlType="XRTableCell" Name="tableCell2" Weight="1.5671926844198703" StyleName="GroupCaption1" ForeColor="Black" BackColor="DarkGray" BorderColor="Transparent">
+                  <ExpressionBindings>
+                    <Item1 Ref="107" EventName="BeforePrint" PropertyName="Text" Expression="[GroupType]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="108" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+            <Item2 Ref="109" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="110" ControlType="XRTableCell" Name="tableCell4" Weight="1.763091796875" Multiline="true" Text="[GroupDescription]" StyleName="GroupDataSub" Font="Arial, 8.25pt, charSet=0" ForeColor="Black" BackColor="LightGray" BorderColor="Transparent">
+                  <StylePriority Ref="111" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item1>
+              </Cells>
+            </Item2>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="112" ControlType="GroupFooterBand" Name="GroupFooter1" HeightF="4.16666651" />
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="113" Name="GroupDataSub" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Calibri, 9pt, charSet=0" ForeColor="White" BackColor="SteelBlue" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item2 Ref="114" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 15pt, style=Bold, charSet=0" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item3 Ref="115" Name="GroupCaption1" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Calibri, 9.75pt, style=Bold, charSet=0" ForeColor="255,228,228,228" BackColor="255,69,94,178" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="116" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IkRTQVJfQ29ubmVjdGlvbiIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9ImF4c3BlY3Nfdkdyb3VwVHlwZXMiPjxUYWJsZXM+PFRhYmxlIE5hbWU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iR3JvdXBUeXBlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9Ikdyb3VwRGVzY3JpcHRpb24iIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iTm9Qcml2aWxlZ2UiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iQ29uZmlndXJlV29ya1N0YXRpb24iIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iQ3JlYXRlQXBwbGljYXRpb24iIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iQWRtaW5pc3RyYXRvciIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJNdWx0aXBsZUxvZ2lucyIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJQdWJsaWNBY2Nlc3NMaWNlbnNlVXNlciIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJTY2FuSW5kZXhPbmxpbmUiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iRW5oYW5jZVBhZ2VzIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkJhdGNoU2NhbiIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJCYXRjaEluZGV4IiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9Ik1vZGlmeUluZGV4IiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkRpc3BsYXkiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iUHJpbnRTZXR0aW5nIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkRlbGV0ZURvYyIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJEZWxldGVQYWdlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkFkZFBhZ2UiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iTW9kaWZ5QXBwbGljYXRpb24iIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iRGVsZXRlQXBwbGljYXRpb24iIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iTWlncmF0ZUFwcGxpY2F0aW9uIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkNPTERJbXBvcnQiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iQ09MREltcG9ydE1haW50ZW5hbmNlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkNPTERCYXRjaEV4dHJhY3QiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iRG9jTGV2ZWxTZWN1cml0eU1haW50ZW5hbmNlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IktleVJlZmVyZW5jZU1haW50ZW5hbmNlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkF1dG9JbmRleE1haW50ZW5hbmNlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IlVzZXJTZWN1cml0eU1haW50ZW5hbmNlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IktleVJlZmVyZW5jZUltcG9ydCIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJBdXRvSW5kZXhJbXBvcnQiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iSW5kZXhJbWFnZUltcG9ydCIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJDcmVhdGVBbm5vdGF0aW9ucyIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJFZGl0QW5ub3RhdGlvbnMiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iQ3JlYXRlUmVkYWN0aW9ucyIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJFZGl0UmVkYXRpb25zIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9Ikdsb2JhbEFubm90YXRpb25zIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IkZ1bGxUZXh0SW5kZXgiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iRnVsbFRleHRRdWVyeSIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJPQ1IiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iUmVwb3J0VmlldyIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZHcm91cFR5cGVzIiBOYW1lPSJSZXRlbnRpb25Vc2VyIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3Mudkdyb3VwVHlwZXMiIE5hbWU9IlJldGVudGlvbkFkbWluaXN0cmF0b3IiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52R3JvdXBUeXBlcyIgTmFtZT0iU3VibWl0V29ya2Zsb3ciIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iYXhzcGVjc192R3JvdXBUeXBlcyI+PEZpZWxkIE5hbWU9Ikdyb3VwVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJHcm91cERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vUHJpdmlsZWdlIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJDb25maWd1cmVXb3JrU3RhdGlvbiIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQ3JlYXRlQXBwbGljYXRpb24iIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IkFkbWluaXN0cmF0b3IiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Ik11bHRpcGxlTG9naW5zIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJQdWJsaWNBY2Nlc3NMaWNlbnNlVXNlciIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iU2NhbkluZGV4T25saW5lIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJFbmhhbmNlUGFnZXMiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IkJhdGNoU2NhbiIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQmF0Y2hJbmRleCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iTW9kaWZ5SW5kZXgiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IkRpc3BsYXkiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IlByaW50U2V0dGluZyIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRGVsZXRlRG9jIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJEZWxldGVQYWdlIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJBZGRQYWdlIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJNb2RpZnlBcHBsaWNhdGlvbiIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRGVsZXRlQXBwbGljYXRpb24iIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Ik1pZ3JhdGVBcHBsaWNhdGlvbiIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQ09MREltcG9ydCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQ09MREltcG9ydE1haW50ZW5hbmNlIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJDT0xEQmF0Y2hFeHRyYWN0IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJEb2NMZXZlbFNlY3VyaXR5TWFpbnRlbmFuY2UiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IktleVJlZmVyZW5jZU1haW50ZW5hbmNlIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJBdXRvSW5kZXhNYWludGVuYW5jZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iVXNlclNlY3VyaXR5TWFpbnRlbmFuY2UiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IktleVJlZmVyZW5jZUltcG9ydCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQXV0b0luZGV4SW1wb3J0IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJJbmRleEltYWdlSW1wb3J0IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJDcmVhdGVBbm5vdGF0aW9ucyIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRWRpdEFubm90YXRpb25zIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJDcmVhdGVSZWRhY3Rpb25zIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJFZGl0UmVkYXRpb25zIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJHbG9iYWxBbm5vdGF0aW9ucyIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRnVsbFRleHRJbmRleCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRnVsbFRleHRRdWVyeSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iT0NSIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJSZXBvcnRWaWV3IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJSZXRlbnRpb25Vc2VyIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJSZXRlbnRpb25BZG1pbmlzdHJhdG9yIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJTdWJtaXRXb3JrZmxvdyIgVHlwZT0iQm9vbGVhbiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

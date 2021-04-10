@@ -8,12 +8,14 @@
     <None Remove="Reports\AXApplicationList.vsrepx" />
     <None Remove="Reports\AXDocOverview.vsrepx" />
     <None Remove="Reports\AXGlobalUDLList.vsrepx" />
+    <None Remove="Reports\AXGroupTypes.vsrepx" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Reports\AXApplicationList.vsrepx" />
     <EmbeddedResource Include="Reports\AXDocOverview.vsrepx" />
     <EmbeddedResource Include="Reports\AXGlobalUDLList.vsrepx" />
+    <EmbeddedResource Include="Reports\AXGroupTypes.vsrepx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +42,12 @@
     </Compile>
     <Compile Update="Reports\AXGlobalUDLList.Designer.cs">
       <DependentUpon>AXGlobalUDLList.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXGroupTypes.cs">
+      <DependentUpon>AXGroupTypes.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXGroupTypes.Designer.cs">
+      <DependentUpon>AXGroupTypes.vsrepx</DependentUpon>
     </Compile>
   </ItemGroup>
 
