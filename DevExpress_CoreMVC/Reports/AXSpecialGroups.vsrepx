@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="AXSpecialGroups" Margins="70, 30, 30, 50" PageWidth="850" PageHeight="1100" Version="20.2" DataMember="axspecs_vSpecialGroups" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".vsrepx" />
+  </Extensions>
+  <CalculatedFields>
+    <Item1 Ref="3" Name="ConfidentialStatus" DisplayName="Confidential Status" Expression="Iif([Confidential]=1,'Yes','')" DataMember="axspecs_vSpecialGroups" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin" HeightF="30" />
+    <Item2 Ref="5" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="375,23" LocationFloat="0,0" StyleName="Style1" />
+        <Item2 Ref="7" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="375,23" LocationFloat="375,0" StyleName="Style1" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="8" ControlType="GroupHeaderBand" Name="GroupHeader1" RepeatEveryPage="true" GroupUnion="WithFirstDetail" Level="2" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="9" FieldName="GroupType" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="10" ControlType="XRTable" Name="table1" SizeF="727.0833,25" LocationFloat="22.9167023,0">
+          <Rows>
+            <Item1 Ref="11" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="12" ControlType="XRTableCell" Name="tableCell1" Weight="0.11361540879536192" Text="Group Type: " StyleName="GroupCaption1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="255,224,224,224" BorderColor="Transparent" BorderWidth="1">
+                  <StylePriority Ref="13" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorderWidth="false" />
+                </Item1>
+                <Item2 Ref="14" ControlType="XRTableCell" Name="tableCell2" Weight="0.855828978315596" StyleName="GroupData1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="255,224,224,224" BorderColor="Transparent" BorderWidth="1">
+                  <ExpressionBindings>
+                    <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[GroupType]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="16" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorderWidth="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="17" ControlType="GroupHeaderBand" Name="GroupHeader2" RepeatEveryPage="true" GroupUnion="WithFirstDetail" Level="3" HeightF="52" KeepTogether="true">
+      <GroupFields>
+        <Item1 Ref="18" FieldName="GroupName" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="19" ControlType="XRTable" Name="table2" SizeF="750,50" LocationFloat="0,2">
+          <Rows>
+            <Item1 Ref="20" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="21" ControlType="XRTableCell" Name="tableCell3" Weight="0.11591771443684897" Text="Group Name: " StyleName="GroupCaption1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="DarkGray" BorderColor="Transparent">
+                  <StylePriority Ref="22" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item1>
+                <Item2 Ref="23" ControlType="XRTableCell" Name="tableCell4" Weight="0.884082275390625" StyleName="GroupData1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="DarkGray" BorderColor="Transparent">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[GroupName]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="25" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+            <Item2 Ref="26" ControlType="XRTableRow" Name="tableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="27" ControlType="XRTableCell" Name="tableCell9" Weight="0.999999989827474" Multiline="true" Text="[GroupDescription]" StyleName="GroupData1" Font="Calibri, 9.75pt, charSet=0" ForeColor="Black" BackColor="DarkGray" BorderColor="Transparent">
+                  <StylePriority Ref="28" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" />
+                </Item1>
+              </Cells>
+            </Item2>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="29" ControlType="GroupHeaderBand" Name="GroupHeader3" RepeatEveryPage="true" GroupUnion="WithFirstDetail" Level="1" HeightF="28">
+      <Controls>
+        <Item1 Ref="30" ControlType="XRTable" Name="table3" SizeF="627.083252,28" LocationFloat="22.9166565,0">
+          <Rows>
+            <Item1 Ref="31" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="32" ControlType="XRTableCell" Name="tableCell6" Weight="0.6934299871605023" Text="Application Name" StyleName="DetailCaption1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="255,224,224,224" BorderColor="Black" Borders="Right">
+                  <StylePriority Ref="33" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="34" ControlType="XRTableCell" Name="tableCell7" Weight="0.14268108522487732" Text="Confidential" TextAlignment="MiddleCenter" StyleName="DetailCaption1" Font="Calibri, 9.75pt, style=Bold" ForeColor="Black" BackColor="255,224,224,224" BorderColor="Black" Borders="None">
+                  <StylePriority Ref="35" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="36" ControlType="DetailBand" Name="Detail" HeightF="25">
+      <Controls>
+        <Item1 Ref="37" ControlType="XRTable" Name="table4" SizeF="627.0832,25" LocationFloat="22.9167175,0" OddStyleName="DetailData3_Odd">
+          <Rows>
+            <Item1 Ref="38" ControlType="XRTableRow" Name="tableRow4" Weight="11.5">
+              <Cells>
+                <Item1 Ref="39" ControlType="XRTableCell" Name="tableCell10" Weight="0.69342990175376407" StyleName="DetailData1" Font="Calibri, 9.75pt, charSet=0" BorderColor="Black" Borders="Right">
+                  <ExpressionBindings>
+                    <Item1 Ref="40" EventName="BeforePrint" PropertyName="Text" Expression="[AppName]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="41" UseFont="false" UseBorderColor="false" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="42" ControlType="XRTableCell" Name="tableCell11" Weight="0.14268107157466869" TextAlignment="MiddleCenter" StyleName="DetailData1" Font="Calibri, 9.75pt, charSet=0" BorderColor="Black" Borders="None">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[ConfidentialStatus]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="44" UseFont="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item6>
+    <Item7 Ref="45" ControlType="GroupFooterBand" Name="GroupFooter1" GroupUnion="WithLastDetail" HeightF="6.00001">
+      <Controls>
+        <Item1 Ref="46" ControlType="XRLabel" Name="label2" SizeF="727.08,2.08" LocationFloat="22.91673,0" StyleName="GroupFooterBackground3" Borders="None">
+          <StylePriority Ref="47" UseBorders="false" />
+        </Item1>
+      </Controls>
+    </Item7>
+    <Item8 Ref="48" ControlType="PageHeaderBand" Name="PageHeader" HeightF="26.4583263">
+      <Controls>
+        <Item1 Ref="49" ControlType="XRLabel" Name="label1" Text="Special Groups" SizeF="750,24.194334" LocationFloat="0,0" StyleName="Style2" Font="Calibri, 18pt, style=Bold, charSet=0" BackColor="LightSteelBlue">
+          <StylePriority Ref="50" UseFont="false" UseBackColor="false" />
+        </Item1>
+      </Controls>
+    </Item8>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="51" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 14.25pt" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="52" Name="GroupCaption1" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,228,228,228" BackColor="255,69,94,178" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="53" Name="GroupData1" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,69,94,178" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="54" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,69,94,178" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item5 Ref="55" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item6 Ref="56" Name="GroupFooterBackground3" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,228,228,228" BackColor="255,109,117,129" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item7 Ref="57" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,243,245,248" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item8 Ref="58" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item9 Ref="59" Name="Style1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 8.25pt, charSet=0" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item10 Ref="60" Name="Style2" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Calibri, 15pt, style=Bold, charSet=0" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IkRTQVJfQ29ubmVjdGlvbiIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9ImF4c3BlY3NfdlNwZWNpYWxHcm91cHMiPjxUYWJsZXM+PFRhYmxlIE5hbWU9ImF4c3BlY3MudlNwZWNpYWxHcm91cHMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52U3BlY2lhbEdyb3VwcyIgTmFtZT0iR3JvdXBJRCIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZTcGVjaWFsR3JvdXBzIiBOYW1lPSJHcm91cE5hbWUiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52U3BlY2lhbEdyb3VwcyIgTmFtZT0iR3JvdXBEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJheHNwZWNzLnZTcGVjaWFsR3JvdXBzIiBOYW1lPSJDb25maWRlbnRpYWwiIC8+PENvbHVtbiBUYWJsZT0iYXhzcGVjcy52U3BlY2lhbEdyb3VwcyIgTmFtZT0iR3JvdXBUeXBlIiAvPjxDb2x1bW4gVGFibGU9ImF4c3BlY3MudlNwZWNpYWxHcm91cHMiIE5hbWU9IkFwcE5hbWUiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iYXhzcGVjc192U3BlY2lhbEdyb3VwcyI+PEZpZWxkIE5hbWU9Ikdyb3VwSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHcm91cE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iR3JvdXBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb25maWRlbnRpYWwiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Ikdyb3VwVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBcHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

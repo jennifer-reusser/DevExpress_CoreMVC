@@ -9,6 +9,8 @@
     <None Remove="Reports\AXDocOverview.vsrepx" />
     <None Remove="Reports\AXGlobalUDLList.vsrepx" />
     <None Remove="Reports\AXGroupTypes.vsrepx" />
+    <None Remove="Reports\AXSpecialGroups.vsrepx" />
+    <None Remove="Reports\AXSpecialGroupsChangeLog.vsrepx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +18,8 @@
     <EmbeddedResource Include="Reports\AXDocOverview.vsrepx" />
     <EmbeddedResource Include="Reports\AXGlobalUDLList.vsrepx" />
     <EmbeddedResource Include="Reports\AXGroupTypes.vsrepx" />
+    <EmbeddedResource Include="Reports\AXSpecialGroups.vsrepx" />
+    <EmbeddedResource Include="Reports\AXSpecialGroupsChangeLog.vsrepx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +52,18 @@
     </Compile>
     <Compile Update="Reports\AXGroupTypes.Designer.cs">
       <DependentUpon>AXGroupTypes.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXSpecialGroups.cs">
+      <DependentUpon>AXSpecialGroups.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXSpecialGroups.Designer.cs">
+      <DependentUpon>AXSpecialGroups.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXSpecialGroupsChangeLog.cs">
+      <DependentUpon>AXSpecialGroupsChangeLog.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AXSpecialGroupsChangeLog.Designer.cs">
+      <DependentUpon>AXSpecialGroupsChangeLog.vsrepx</DependentUpon>
     </Compile>
   </ItemGroup>
 
