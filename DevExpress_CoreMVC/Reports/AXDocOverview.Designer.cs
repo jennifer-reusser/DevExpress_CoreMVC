@@ -21,6 +21,10 @@ namespace DevExpress_CoreMVC.Reports {
             this.PageHeader = reportInitializer.GetControl<DevExpress.XtraReports.UI.PageHeaderBand>("PageHeader");
             this.pageInfo2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPageInfo>("pageInfo2");
             this.pageInfo1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPageInfo>("pageInfo1");
+            this.changeLog = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("changeLog");
+            this.changeLog.ReportSource = new DevExpress_CoreMVC.Reports.AXSpecialGroupsChangeLog();
+            this.specialGroups = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("specialGroups");
+            this.specialGroups.ReportSource = new DevExpress_CoreMVC.Reports.AXSpecialGroups();
             this.groupType = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("groupType");
             this.groupType.ReportSource = new DevExpress_CoreMVC.Reports.AXGroupTypes();
             this.globalUDL = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("globalUDL");
@@ -28,10 +32,6 @@ namespace DevExpress_CoreMVC.Reports {
             this.appList = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("appList");
             this.appList.ReportSource = new DevExpress_CoreMVC.Reports.AXApplicationList();
             this.label1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label1");
-            this.specialGroups = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("specialGroups");
-            this.specialGroups.ReportSource = new DevExpress_CoreMVC.Reports.AXSpecialGroups();
-            this.changeLog = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRSubreport>("changeLog");
-            this.changeLog.ReportSource = new DevExpress_CoreMVC.Reports.AXSpecialGroupsChangeLog();
 
             // Data Sources
             this.sqlDataSource1 = reportInitializer.GetDataSource<DevExpress.DataAccess.Sql.SqlDataSource>("sqlDataSource1");
@@ -45,13 +45,13 @@ namespace DevExpress_CoreMVC.Reports {
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo2;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo1;
+        private DevExpress.XtraReports.UI.XRSubreport changeLog;
+        private DevExpress.XtraReports.UI.XRSubreport specialGroups;
         private DevExpress.XtraReports.UI.XRSubreport groupType;
         private DevExpress.XtraReports.UI.XRSubreport globalUDL;
         private DevExpress.XtraReports.UI.XRSubreport appList;
         private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraReports.UI.XRSubreport specialGroups;
-        private DevExpress.XtraReports.UI.XRSubreport changeLog;
     }
 }

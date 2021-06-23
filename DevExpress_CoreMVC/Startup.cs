@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevExpress.AspNetCore.Reporting.Azure;
 
 namespace DevExpress_CoreMVC
 {
